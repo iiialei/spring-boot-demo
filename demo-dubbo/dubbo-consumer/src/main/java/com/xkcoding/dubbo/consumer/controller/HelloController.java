@@ -22,7 +22,8 @@ public class HelloController {
     private HelloService helloService;
 
     @GetMapping("/sayHello")
-    public String sayHello(@RequestParam(defaultValue = "xkcoding") String name) {
+    @Cache(name = "程文潮已重新修改配置")
+    public String sayHello(@RequestParam String name) {
         log.info("i'm ready to call someone......");
         return helloService.sayHello(name);
     }

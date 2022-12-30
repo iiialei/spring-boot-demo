@@ -7,4 +7,4 @@ spring:
   dubbo:
     application:
       name: spring-boot-demo-dubbo-provider
-      registry: zookeeper://localhost:2181
+      registry: zookeeper://192.168.56.128:2181
